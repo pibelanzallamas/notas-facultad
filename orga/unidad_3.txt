@@ -1,0 +1,63 @@
+unidad 3
+teoria general de sistemas
+
+el organizmo es un sistema abierto, en constante intercambio
+con otros sistemas circundantes por medio de compleja interacciones
+
+un sistema es un conjutno que tiene elementos que se relacionan
+entre si con el fin de un objetivo
+
+la teoria general de un sistema es un todo organizado o complejo
+ese todo a su vez es un conjunto de multipartes que lo conforman
+el todo depende a su vez de las partes para asi tener un objetivo
+o proposito . el sistema es un conjunto de unicades recip relaci
+
+niveles de complejida:
+
+	- sistema: totalidad coherente, familia
+	- suprasistema: medio que rodea al sistema, amigos familia
+	- subsistemas: los componentes del sistemas, individuos
+
+
+
+caracterisitcas genrales de los sistemas:
+
+	- totalidad: el sistema trasciende las caracteristicas 
+		individuales de cada miembro
+
+	- sinergia: todo cambio en alguna de las partes afecta 
+		a todas las demas y en ocaciones al sistema. El
+		todo es más que la suma de las partes, ya que inclu
+		ye las interacciones, relaciones y la organización
+
+	- entropía: los sistemas tienden a conservar su identidad.
+		Tendencia al desorden de un sistema
+
+caracteristicas generales de los sistemas:
+
+	- equifinalidad: las modificiaciones del sistema son indep
+		de las condiciones iniciales
+	- equipotencialidad: hacerse cargo de las partes extingui
+		das
+	- finalidad: comparten metas comunes
+
+	- retroalimentacion: mantienen un constante intercambio de 
+		informacion
+
+	- homoostasis: equilibrio en un sistema
+
+	- morfogenesis: tendencia al cambio
+
+tipos de sistemas:
+	
+	- abiertos: mantienen unas fronteras abiertas con el mudno
+		el resto de sistemas, con lo que comparten inter
+		cambios de energia e informacion
+
+	- cerrados: hay muy poco intercambio de energia e informa
+		ción con el mundo más amplio en que viven.
+
+
+teoria general de sistemas
+
+	

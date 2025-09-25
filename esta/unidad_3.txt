@@ -1,8 +1,0 @@
-unidad 3
-teoria general de sistemas
-
-el organizmo es un sistema abierto, en constante intercambio
-con otros sistemas circundantes por medio de compleja interacciones
-
-un sistema es un conjutno que tiene elementos que se relacionan
-entre si con el fin de un objetivo
