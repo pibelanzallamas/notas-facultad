@@ -1,0 +1,79 @@
+costos
+
+en general es un sacrificio que se realiza tratando de obtener
+algo con mayor valor
+
+costo, economicamente, es el gasto efectuado con la intencion
+de lograr un redito monetario
+
+
+clasificacion
+	por su naturaleza:
+
+		- materiales
+
+		- mano de obra
+
+		- gs generales
+
+	por su relacion con la unidad de costo
+
+		- indirectos
+
+		- directos
+
+	por su comportamiento frente al volumen de produccion
+
+		- fijos
+
+		- semi fijos / semi variables
+
+		- variables
+
+	tradicional:
+		
+		- materiales directos
+
+		- mano de obra directa
+
+		- gastos indirectos fijos y variables
+
+	clasificacion:
+
+		- por area:
+				
+			- produccion
+
+			- comercializacion
+
+			- administracion
+
+			- financiacion
+
+			- etc
+
+		- por el momento de calculo:
+		
+			- historicos
+
+			- pre-determinados
+
+ct = cf + cv
+
+cv = m * cvu
+
+ct = cf + m . Cvu
+
+ctu = cfu + cvu
+
+ctu = cf + cvu / m 
+
+
+	punto de cobertura:
+		es la cantidd minima de unidades que necesitas 
+		vender de un producto, para que tu negocio no 
+		gane ni pierda dinero
+
+		puede ser para los valores globales, los ingresos
+		con el costo, para los individuales el precio de
+		venta con el costo total unitario

@@ -1,0 +1,85 @@
+presupuestos
+
+es un herramienta de gestion empresarial que se utiliza
+para prever acontecimientos futuros propios en el corto plazo
+
+conjunto de patrones establecidos y coordinados en forma sistematica
+para lograr objetivos, para un periodo determina (6meses/1an)
+
+estructura
+
+- establecer las metas a conseguir
+
+- coordinar las operaciones
+
+- determinar patrones que sirvan de referencia
+
+
+parametros a considerar
+
+- variables macroeconomicas
+
+- politica empresarial
+ 
+- grado de exactitud
+
+- situacion del meracdo
+
+- politicas fiscales a corto y mediano plazo
+
+- periodo considerado
+
+
+control presupuestario: es la herramienta de verificacion que per
+mite corroborar el cumplimiento o violacion de las pautas presu
+puestarias establecidas
+
+perido presupuestario: por lo general 6 meses
+monto de ventas: 26000 unidades a 50$ c/u (4000 mensuales ene feb
+mar y abri 5000 mayo junio)
+
+costo de cada producto: 2 unidades del material A $2c/u; 3 unidades
+del material B ($1 c/u); 0.25 horas hombre por producto 
+
+el patrimonio neto:
+	 es el valor real de algo en un momento 
+	determinado
+
+
+presupuesto economigo
+	devengado
+	en el momento en el que se facture, el pago puede ser dsp
+	
+	ACTIVO
+	es un recurso con valor que alguien posee con la intencion
+	de que gener un beneficio futuro (sea economico o no) 
+	en contabilidad representa todos los bienes y derechos
+	de una empresa que han sido adquiridos en el pasado y con 
+	los que se esperan obtener beneficios en el futuro
+
+	PASIVO
+	el pasivo en contabilidad son las deudas y obligaciones de 
+	una empresa, utilizadas para financiar su actividad y 
+	pagar activos. 
+	
+	PATRIMONIO NETO
+	el patrimonio neto es la riqueza total de la empresa calcu
+	lada como la diferencia entre los activos y los pasivos
+
+	
+	ESTADO DE RESULTADO
+	nos indica como los ingresos se transforman en beneficio 
+	segundo le vamos restando los gasto, nos ayud a tener una
+	vision rapida de cuales han sido los gastos mas importantes
+	para la empresa
+
+	BENEFICIO
+	es un termino existente en contabilidad que se refiere a la
+	diferencia entre ingresos y gastos de cualquier empresa
+	en un periodo determinado
+
+	RENTABILIDAD
+	es basicamente lo que ganas de una inversion. es tan cru
+	cial tanto para empresas como para inversores porque muestra
+	que tan bien va una inversion y si una empresa esta usando
+	bien su dinero

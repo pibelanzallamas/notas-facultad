@@ -61,3 +61,22 @@ tipos de sistemas:
 teoria general de sistemas
 
 	
+proceso administrativo
+
+	es el conjunto de fases o etapa sucesivas a traves de las
+	cuales se efectua la administracion
+	
+	las cuatro fases son:
+	
+		- planeacion
+		- organizacion
+		- direccion
+		- control
+
+			- planeacion: hablar en voz alta y decir
+			que vamos hacer y para que motivar
+			- organizacion: cocechar y transportar 
+			frutos 
+			- direccion: armar el pajaro
+			- conttrol: encargado de cerciorarse que
+			  todo vaya a su plan
