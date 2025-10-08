@@ -1,0 +1,94 @@
+
+NO STATIC
+variables de instancias
+ se guardan distintas dentro de cada instanacia
+ se pueden acceder desde la instancia
+
+STATIC
+variables de clase
+ static, se guarda una sola vez dentro de la clase
+ se pueden acceder desde la clase
+
+
+NUMERO DE SERIE
+ guardo el talonario en la clase luego ya que
+ las instancias pueden modificar a las clases
+ puedo ir sumando uno a la variable de la clase
+
+
+MANDAR MENSAJES
+ al programador del main, lazando excepciones desde los objetos
+ nunca mandarle mensaje o pedirle info al usuario final
+ todo backend
+
+METODOS DE INSTANCIA
+ si el metodo que yo necesito utiliza variables de instancia
+ utilizo metodos de instancia, lo mismo con variables de clases
+
+
+
+
+
+
+vamos a hacer todo lo que tenga que ver
+con las calses y objetos
+
+COMO GUARDO MIS CLASES Y OBJETOS PARA RETULIZARLOS EN OTROS PROGRAMAS
+ORDEN?
+
+##Herencia##
+Permite la creación de neuvas clases basadas en clases existentes
+
+Clase
+Función constructora crea una plantilla
+reserva espacio
+inicializa atributos
+
+### Object ###
+Todos los objetos que creemos en primera instancia son hijos de la clase 'Object'
+
+(dentro hay metodos native: escritos en c o asambly se comunican directamente con el sistema operativo)
+
+# Métodos del Object Padre #
+toString() retorna un string representante de un Object, se activa desde la clase de Object en memoria
+
+# Identificador Hash #
+id de cada objeto
+
+# Modificación de Métodos Hered #
+los metodos de Object se pueden modificar y/o sobrescribir
+
+# Polimorfismo
+Funciones con muchas formas
+
+Obejct x = r1 ->objecto de un clase
+es igual que hacer
+
+x = new Object ()
+
+solo le puedo pedir cosas de Object
+
+???
+
+# UML #
+Lenguaje independiente de los leng de programación
+
+seudocódigo = es hablando normalmente que taréas vas a hacer. 
+
+CLASIFICADOR
+NombreClase
+Atributos / Propiedades
+Operaciones / Métodos
+
+~ package
++ private
+- public
+# protected
+
+## RELACIONES ENTRE CLASES ##
+Tipo de Relaciones: 
+	-  Asociación
+	
+composicion o agregación
+	
+

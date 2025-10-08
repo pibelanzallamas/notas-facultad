@@ -1,0 +1,21 @@
+
+
+
+magic number: 
+ numero que tiene indicación de que represen
+ solución: ponerle nombre
+
+constantes:
+ en la clase de cada objeto, para que
+ sean accesibles desde cualquier parte
+ 
+ private final String marca;
+  tambien puedo no darle valor, para que se 
+  lo de el constructor, unico chanqui,
+  va en minuscula
+ 
+ private final String MAX_VOL = 100;
+  para constante absolutas, va en mayuscula
+  
+  
+ 

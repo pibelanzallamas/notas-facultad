@@ -1,0 +1,125 @@
+CANTIDAD DE CLASES
+
+28 clases (14 semanas, 3 meses y 2 semanas) 
+
+PARCIALES
+	- primer parcial (1 parte teórica multiple choice, 2 parte práctica(3hs)) primera semana de octubre
+
+	- segundo parcial (1 parte teórica multiple choice, 2 parte práctica(3hs) temas: archivos, listado)
+	
+	- recuperatorios: se rinden las partes reprobadas, segundo recuperatorio: última/anteúltima clase
+
+	- final (lo mismo que el segundo parcial pero con interface, recomienda hacerlo igual la interface)
+
+¿QUE VEMOS DE NUEVO?
+otra manera de pensar en la resolución de problemas,
+no cambia lo que vamos a producir en general, si no que ahora lo hacemos con objetos
+
+LEER PDF ANTES DE CADA CLASE
+ - hacer ejercicios es buena practica, ya sabes, de hacer la guia de ejercicios por tema. 1 semana despues chequear los ejercicios.
+ - ejercicios integrados, se resuelven en clase, son mas completos, siempre es mejor haber tratado de resolver algo y si me trabo me trabo,  
+   después alguien me explica como resolverlo.
+
+PARADIGMAS DE PROGRAMACION
+ - no hay un sola forma de pensar el código
+ - dependiendo del problema vamos a elegir un paradigma distinto, distinta forma de pensar el problema, pensar en la solución y resolverlo
+ - cada paradigma tiene sus reglas y técnicas
+ - conocer los diferentes paradigmas nos permite elegir el adecuado para cada solución
+
+UN BUEN PROGRAMA PUEDE SER
+ - correcto: cuando cumple su funcion
+ - eficiente: lo hace utilizando la menor cantidad de recursos, ram, procesador (calculos lógicos que realiza la calculadora) y tiempo, los dos
+   recursos mas importantes, hardware y tiempo, si quiero un promedio de edades de alumnos que no tarde un mes en devolverme un resultado
+
+*****
+AHORA ademas de hacer algo correcto, que me devuelva el resultado ESPERADO, si no que lo tenemos que hacer de una MANERA determinada.
+*****
+
+PARADIGMA DECLARATIVO
+yo digo que quiero hacer y no como se hace.
+
+PARADIGMA IMPERATIVO
+doy las ordenes en el orden correcto.
+
+PARADIGMA FUNCIONAL
+subcategoría del paradigma imperativo
+cuando las funciones son tratadas como ciudadanos de primera clase
+ciudadanos primera clase: cuando se pueden manejar igual que cualquier expresión. 
+lambda: pasar una función como parametro. 
+Principio de divide y conquistaras: hacer funciones más chiquitas (Python, Java)
+
+PARADIGMA ESTRUCTURAL
+subcatecoría del declarativo, la evolución para almacenar datos es esta,
+variables, listas paralelas, diccionarios, listas de diccionarios, tipo estruct (C)
+
+PROBLEMAS DE PROG ESTRUCTURADA
+se complica cuando son muchos datos
+
+(!)NO SE HACEN LISTAS CON DATOS DE DIFERENTES TIPOS(!)
+
+LENGUAJE BAJO NIVEL
+lenguaje que esta cerca del hardware, necesita un extra cuidado con temas del hardware, memoria, etc
+
+LENGUAJE ALTO NIVEL
+lenguaje centrado solamente en el código fuente, ya resuelve temas de hardware
+
+CÓDIGO MAQUINA
+lenguaje ensamblador, 0s y 1s, lenguaje de más bajo nivel
+
+HISTORIA
+Con la llegada de los transitores y circuitos integrados se fueron pasando las plaquetas con circuitos
+cableados, cada uno por un algorítmo diferente por lenguaje de maquina,
+
+LENGUAJE COMPILADO
+compila el código fuente por completo a código maquina, pasa las sentencias que entedemos a 1s y 0s
+es más rápido porque ya esta todo traducido, es poco portable, c, c++
+se tiene que especificar el tipo de las variables, todo se tiene que saber de antemano
+a la compilación (? para que el compilado necesita saber todo antes de compilar)
+
+LENGUAJE INTERPRETADO
+lee una linea, compila esa sentencia y pide al so que la ejecute, compila e interpreta linea por linea, interpreter = actor, script = guión
+es más lento, pero es muy portable, python, javascript
+
+LENGUAJE HIBRIDOS
+JAVA y C# hay una porción que se compila y otra que es interpretada
+
+JAVA
+El código fuente se compila a un código intermedio (Bytecode), el compilador JVM(java virtual machine) se instala y
+compila de acuerdo al sistema operativo que tengas y se termina de ejecutar con un interpret
+combina lo mejor de los dos mundos, es más rápido porque ya tiene una compilación hecha y es multiplataforma, se escribe una sola vez, JDK
+
+PROGRAMACIÓN ORIENTADA A OBJETOS
+Se basa en la representación del mundo real mediante objetos
+Abstracción: identificar cuales son estados y comportamientos
+Es una subclase del paradigma imperativo
+
+JAVA SINTÁXIS
+Siempre se va a ejecutar solo lo que esta dentro del bloque main
+
+public class Clase_1 {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+
+*sout + tab, da el código para print
+
+REPRESENTACIÓN BINARIA DE DISTI TIPOS DE DATOS
+
+BIT(Binary Digit)
+Es la unidad más pequeña de información digital, capaz de representar solo un valor de los posibles dos estados, un 0 o un 1
+
+NUMEROS
+Abro y cierro transitores para que representen determinado número
+
+LOS NUMEROS NEGATIVOS
+Hay un lugar de los bits que si es 0 es positivo y 1 negativo
+
+LOS NUMEROS DECIMALES
+IEEE755 asociación de ingenieros europeos determinaron guardar los decimales con otro sistema
+
+CHART
+Dependiendo de su valor en la tabla ASCII
+
+USO DE MEMORIA PARA TIPOS DISTINTOS
+Si voy a guardar x(int/float) dato, voy a usar el sistema de codifican y guardado x(int/float)

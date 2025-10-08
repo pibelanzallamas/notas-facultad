@@ -1,0 +1,155 @@
+
+Tipos de Datos Primitivos en Java
+
+-Enteros
+byte (8 bits)
+short (16 bits)
+int (32 bits)
+long (64 bits)
+
+-Reales
+float (32 bits, 7 decimales)
+double(64 bits, 15 decimales)
+
+-Chart (16 bits,'\u0000' a '\uffff' 0 a 65,535, caracters unicode individuales)
+
+-Boolean (true o false)
+
+El tipo de variable que elejimos tenemos en cuanto que vamos a guardar, para
+mas memoria y mas eficiencia de cpu, y para el tipo de codificación que vamos a necesitar
+
+RANGO
+rango? 2 elevado a la cantidad de transistores (2**8(1byte - 1 bit para el primer 0 que guarda el signo) - 1(el cero))
+
+QUE PASA CUANDO NO LA INIT
+"INT X" la función cuando se llama reserva 32 bits de bits que se prenden y se apagan "aleatoriamente"  y cuando se termina la vuelve a liberar
+
+MOMENTO PYTHON
+"x = 5" solamente se reservo espacio en memoria para guardar el 5
+si después hago..
+"->x=2020022" se crea un objeto nuevo con otra direccion de memoria  direccionando a otro espacio en memoria, otro valor, y en este caso el mismo tipo
+
+las variables en python siempre guardan el mismo tipo de dato, direcciones de memorias, cada direccion de memoria ocupa el mismo espacio en el stack y esa direccion de memoria apunta al heap donde tengo guardado mi valor
+
+LAS VARIABLES PRIMITIVAS GUARDAN LIT EL DATO. POR ESO LOS TIPOS SON FIJOS
+
+x=5 guarda 000000...0101
+x=10 ahora guarda 00000...1010
+
+(?)
+Ya tienen el tipo de dato que van a guardar, donde no se, porque supuestamente guardan el código binario, para su codificacion
+(?)
+
+LISTAS EN PYTHON GUARDA UNA DIR DE MEM EN STACK QUE APUNTA A DIR DE MEM A LOS DATOS AMBOS EN EL HEAP
+(antes también chequea si ya tiene el dato guardado en el heap para apuntar a el)
+
+# DATOS GLOBALES JAVA #
+guarda la referencia (dir de mem), donde son distintas de acuerdo a lo que guardo, str, listas, mapas(dicciones)
+
+~ calle ahora o hable para siempre ~ 
+
+¿Questions?
+como sabe java que esta guardando en datos primitivos? en dato, el tpo
+python es menos eficiente por revisar en todas sus variables antes de guardar una variables?
+
+(!) EL PODER ES CONOCIMIENTO (!)
+
+MAS EFICIENTE?
+Python nos ahorra especificar tipo de dato, pero al final lo maneja el lenguaje. 
+Al final lo que no hacemos, alguien lo hace por nosotros.
+
+DATOS PRIMITIVOS SAVE
+Estos se guardan literalmente en la variable
+
+OBJETOS SAVE 
+Se guardan las direcciones de memoria
+
+STRINGS
+no son tipos primitivos, son objetos, ya que vienen de una clase, se guardan igual que las direcciones de memoria en python pero ademas hereda sus metodos correspondientes del padre
+
+OPERADORES RELACIONALES
+== -> eq
+
+OPERADORES LÓGICOS
+and -> &&
+or  -> ||
+not ->  !
+
+SHIFT + ALT + F = autoformateo
+
+ESTRUCTURAS DE CONTROL DE FLUJO
+match    ->  switch
+	 ->  break (obligatorio)
+case "_" ->  default
+
+*En python, se pueden poner rangos en los cases*
+
+LENGUAJES
+c estructurado
+c# orientado a objetos 100% compilados
+java c++ hibridos
+javascript python 100% interpretados
+
+no importa cual es el mas complejo, depende del contexto
+aprender otro idioma es solo sintaxis
+
+ESTRUCTURAS REPETITIVAS
+
+WHILE
+int i = 1;
+while (i <= 10){
+	System.out.println(i)
+	i++;
+}
+
+FOR
+for(int i = 1; i <= 10; i++){
+	System.out.println(i)
+}
+
+INPUT 
+Crear un escaner de la biblioteca utils, crear un scanner, usarlo
+
+import java.util.Scanner
+
+Scanner input = new Scanner(System.in)
+
+System.out.print("Ingrese su edad: ") -> ln-salto de línea
+
+nombre = input.next() -> "juan" hasta que pongo enter
+
+System.out.println("Te llamas " + nombre)
+
+- nextInt() para castear el input a int, si no, rompe
+
+- importar scanner -> crear scanner -> imprimir prompt -> guardar
+
+DO WHILE
+int numero = 0;
+
+while (numero != -1){
+	sout("Ingrese un numero positivo o -1 para salir: )
+	numero = input.nextInt("Ingrese un número: ")
+	System.out.println("Ingresaste el numero " + numero)
+}
+
+NORMA DE NUMEROS
+enteros usamos -> int
+flotantes      -> double
+
+DOUBLE CASTEO
+si divido INTS con DOUBLE, toma el que tiene más información, en este caso DOUBLE
+
+promedio = (double)(a + b) / 2; -> convertir a+b a double
+en el aire = on the fly = no se guarda en ningún lado
+
+
+### FUNCIONES ###
+
+public static int sumar(int a, int b){
+
+	return a + b;
+
+}
+
+

@@ -1,0 +1,59 @@
+HERENCIA
+ new Rectangulo -> llama al constructor de Object 
+ este devuelve una referencia a un Object nuevo, se la pasa a Rectangulo
+ luego el Rectangulo guarda esa refe y le pasa su referencia a el nuevo objeto creado
+
+.TOSTRING()
+ nombredelpaquete.nombredelaClase@ ->(pertenece a) dominio del identificador
+ estos métodos estan para sobrescribirlos
+
+SOBRESCRIBIRLOS
+ respeto el mismo nombre del método y ya lo sobrescribe, .toString() -> mostrar el
+ estado del objecto
+ 
+@Override
+ chequeo para sobreescribir métodos heredados
+
+POLIMORMFIMO
+ -PARAMÉTRICO: depende del parametro que se pasa ejecuta una de esas versiones
+ -POR HERENCIA: modificar un metodo heredado
+ 
+OBJET
+ A un Object le puedo guardar la dirección de memoria de cualquier
+ hijo de Object, pero solo le puedo pedir las caracteristicas de Object
+
+UML
+ 14 Diagramas estandares para Programación Orientado a Objetos 
+
+STAKEHOLDERS
+ Todos los que estan involucrados en un proyectos, dueños, aquitectos
+
+ +-----------+    + public
+ |NombreClase|    - private
+ |Atributos  |---># protected
+ |Métodos    |    ~ package 
+ +-----------+
+
+ASOCIACION
+ Para definir una asociación se suele usar el verbo "tiene..."
+ Una clase "tiene" como atributo una instancia de otra clase
+
+ Rol: nombre que se le da a la relación
+ Direccionalidad: 
+ Multiplicidad:
+
+ -Preguntarse
+  ¿Quién controla a quién?
+
+ -Agregación
+  Pueden vivir ambos de manera independiente  
+
+ -Composición
+  No puedo vivir sin esa relación
+
+ 
+BARREDOR DE BASURA
+ Cada tanto chequea que hay objetos con sus 
+ respectivas referencias si no borra el objeto
+
+
