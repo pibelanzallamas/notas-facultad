@@ -1,0 +1,428 @@
+tres tipos de datos , numeros - int, strings - varchar(n), fecha - date (aaaammdd) time (hhmmss)
+
+
+clave foranea me relaciona con otra tabla, desde 
+en mi tabla 2 mi columna foregin key es la primary key de mi tabla1
+
+`foreign key(fk_t2) references tabla1(pk_t1)`
+
+si falla algo en las sentencil dml, no se ejecuta nada
+
+
+create table - crea una tabla `nombre (columnas tipo validaciones)`
+
+alter table - modifica la tabla, cud columna
+
+alter table productos add columna tipo-de-dato NOT NULL
+	no puedo agregar columnas not null aca, por las antiguos
+	registros 
+
+alter table productos add color varchar(10);
+
+alter table prodcutos modify (color default 'rojo' not null);
+
+alter table prodcutos drop
+
+
+drop table - borra completamente la tabla para siempre
+
+drop table productos;
+
+indices - sirve para buscar mejor registros
+
+create index i_xn on productos(numero) 
+
+las pk ya estan indexadas
+
+drop index - buscar del catalogo nombr index
+
+vistas - sirven para dar permisos sobre una porción 
+
+	 de la tabla, se consultan tmb en catalogo
+
+create view v_algunos_provedores as (query sql) select
+
+numero, localidad from proveedores where localidad = 'capital';
+
+
+DML lenguaje de manipulacion de datos
+
+Select - mostrar registros de columnas
+
+$ común
+`select (columnas) from (tabla)`
+
+opcional una condicion, opcionalmente un ordenamiento
+
+$ distinc 
+`select distinct pnro 
+from prov_prod`       - devuelve solo valores únicos
+
+$ condicion por valores
+`where columna = valor` - que quiero filtrar
+
+`and precio = valor` - puede tener hasta 10
+
+`select añós from alumnos where años < 1994 and sexo = 'm' - >= != and or not
+
+$ ordenamiento - ordena asc/desc por valor
+
+`select * from alumno  order by año asc;`
+
+`select * from alumnos order by año asc, precio desc` - cuando queres más criterios
+
+ 
+$ consultas de reunion - reunir DOS o más tablas
+
+`select tabla1.campo1, tabla2.campo1 from tabla1, tabla2
+where tabla1.campo1 = tabla2.campo1` - relaciono dos tablas distintas
+
+agrega as alias, para usar abreviación 
+
+
+select funciones
+
+$ count - devuelve un num con el total de resultados
+
+`select count(legajo) as total from alumnos`
+
+ devuelve el total de alumnos es la columna total
+
+$ count + distinc - devuelve el total de resultado únicos
+
+`select count(distinc legajo) as total from alumnos`
+
+$ sum - devuelve num con suma de los valores
+
+`select sum(precios) as suma from productos`
+
+$ avg - devulve el promedio de los valores
+
+`select avg(precios) as avg from productos`
+
+$ min - devuelve el valor mas chicho
+
+`select min(precio) as min from productos`
+
+$ max - devuelve el valor mas grande
+
+`select max(precio) as mac from productos'
+
+
+$ group by - agrupa por valores iguales de una o mas columnas
+
+`select nombre, sum(montos) as ventas from vendedores
+ group by nombre` 
+
+$ having - filtra en grupos igual que el where en filas
+
+`select nombre, sum(montos) as ventas from vendedores
+ group by nombre having nombre = "A%"
+
+caracteristicas avanzadas
+
+$ like - para que cumpla con una regex
+
+$ not like - para que no cumpla con una regex
+
+$ % - representa cualquier secuencia de caract
+
+$  _ - representa un caracter cualquiera
+
+where nombre like "A%" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+opcionalmente puede tener mas de una columna, una clave primaria, una clave
+ajena,
+
+def de columa:
+nombre-de-columna tipos-de-datos (not null)
+
+TABLAS SON ALGO FISICO
+
+VISTAS, INDEX SON ALGO LOGICO NO FISICO
+
+DDL
+
+#### claves primarias ###
+
+TIPOS DE DATOS EN TODOS LOS MOTORES
+Cambian como se le dicen de acuerdo a la tec y motor de base de datos
+todos los motores tienen estos tres tipos de datos
+
+- datos numericos (NUMBER, FLOAT, INTEGER)
+- datos cadena (VARCHAR, CHART)
+- datos de fecha y hora (TIME, DATE)
+
+REGLAS DE INTEGRIDAD: PK, NOT NULL, FK
+
+PRIMARY KEY
+Ya valida por NOT NULL, dos primary key: (1, 2)
+
+PARA RELACIONAR DOS TABLAS:
+A UN ELEMENTO DE ESTA ENTIDAD CUANTOS ELEMENTOS LE DEN A ESTA?
+
+PREGUNTARSE
+En ambos casos, de una tabla a otra. La foregin key va en el lado
+de muchos, osea del hijo
+
+FOREGIN KEY("CAMPO) REFERENCES "TABLA"("CLAVE PRIMARIA);
+Clave foreana, regla de identidad referencial.
+
+??? LOS PERROS SE FUERON A LA M 18:53 volví
+
+RELACIÓN DE MUCHOS A MUCHOS
+Se crea una tercer tabla relacional, con una clave primaria compuesta (
+
+### CREATE TABLE ###
+...
+PNRO INT NOT NULL
+PNOMBRE VARCHAT NOT NULL
+PRIMARY KEY(NUMERO,PNRO), 
+FOREING KEY (NUMERO) REFERENCES PROVEDOORES (NUMERO),
+FOREIGN KEY (PNRO) REFERENCES PROVEDORES (PNRO);`
+
+NOMBRE DE TABLAS HIJOS MISMO NOMBRE CON EL CAMPO DE LA TABLA PADRE
+
+AGREGAR UNA COLUMNA A UNA TABLA YA CREADA
+ALTER TABLE "tabla" ADD "columna" "tipo-de-dato"
+
+no se puede aclarar not null con el add, solo agregandole el default, no se puede agregar una columna que sea not null y tener campos vacios
+
+con MODIFY Si, 
+
+### ALTER TABLE ###
+... PRODUCTS MODIFY (COLOR DEFAULT 'ROJO' NOT NULL)
+
+### DROP TABLE ###
+Borrar tabla entera, solo en casos que no tenga hijos, si no es inconcistencia de datos, no te deja borrar
+
+DROP TABLE "tabla"
+
+### INDEX ###
+Un indice en una base de datos es igual a el indice de un libro
+asi es mas facil de encontrarlo,
+
+full scam = buscar hoja por hoja hasta encontrar por el filtro 
+encontrado
+
+Cuando lo creo se reserva en memoria el campo distrubuie en una estructura de arbol y busca más rápido
+
+Crear indices en casos de que tengo muchos registros
+
+### CREATE INDEX ###
+Si tengo dos campos por lo que siempre busco en mi talba, puedo 
+crear un index compuesto con dos campos. Se pueden hacer varios indices en una tabla
+CREATE INDEX I_XN ON "tabla" ("campo", "campo2(opciona)")
+Si no encuentra el dato, te avisa mas rapido.
+
+Las PK ya estan indexadas.
+
+### DROP INDEX ###
+Eliminar un Index. Como movernos en la base de datos como DBA.
+Como saco el nombre del indice: Select "vistas de Catalogos" where tablas = EMPLEADO, no se le puede usar SELECT, es un objeto que tiene otro uso en la base de tablas
+
+### CREAT VIEW ###
+... V_nombre_de_vistas AS SELECT "campo","campo", FROM "tabla" 
+WHERE "campo" EQ "propiedad"
+
+### DROP VIEW ###
+... V_nombre_de_vista
+
+### CREATE OR REPLACE ###
+Si la vista ya existe, la remplaza, si no la crea
+
+
+
+
+#########CORTE 5 MIN 20:09 ME PERDI CON EL SELECCT
+
+DML
+
+O SE EJECUNTAN POR COMPLETO O NO< ya se por el problema que sea
+
+SELECT "CAMPOS"
+FROM "TABLA
+WEHRE "CAMPO" = 'propiedad'
+
+????
+
+### ORDER ###
+
+ORDER BY PRECIO DESC; DESC/ASC = de mayor a menor
+ORDER BY PRECIO; - por defecto es ASC
+
+GENERA PLATA PIP
+
+ORDER BY 2 O MÁS CAMPOS
+
+### ORDER BY "campo", "campo" DESC; ###
+
+ORDER BY "numero del campo que estoy seleccionando"
+
+### SELECT DOS O MAS TABLAS ###
+Aclaro de que tabla viene, en el select, from, where,
+En el FROM. `FROM "tabla" as "t", "tabla2" as "2t"`
+
+FILTRO
+Si la columna esta en las dos tablas, aclaro en el WHERE, 
+de que tabla es. P.Localidad = "localidad"
+
+
+### FUNCIONES SELECT ###
+SELECT COUNT(*)
+FROM "tabla"; - da la cantidad de tuplas
+
+SELECT COUNT(DISTINCT NUMERO)
+FROM "tabla"  - da la cantidad de NUMERO DISTINTOS
+
+SELECT COUNT(*)
+FROM "tabla"; 
+WHERE PNRO = 002; - da la cantidad de productos 2
+
+SELECT PNRO, SUM("campo") AS "nombre_del_campo_en_la_tabla_que_te_voy_a_mostrar"
+FROM "tabla"
+GROUP BY PNRO; - da un valor por cada PNRO
+
+suma el valor del campo de acuerdo los valores difrente de prno
+lo que agrupo por una o dos columas tienen que estar en el select
+
+### HAVING ###
+
+SELECT PNRO
+FROM PROV_PROD
+GROUP BY PNRO
+HAVING COUNT(*) > 1;
+
+HAVING: operador que restringue un group by (agrupamiento)
+COUNT: función
+
+CUANDO TENGO MAS DE ! PNRO 
+
+
+### LIKE ###
+operador que filtra el valor de acuerdo al parametro
+"%" - puede ser cualquier cantidad y cualquier digito
+"A%" - comienzan con A
+"_" - remplaza un solo digito que puede ser cualquier caracter
+
+WHERE FECHA LIKE '__/03/2025';
+
+### NOTLIFE ###
+La contrapardita, los que no terminen en A, etc.
+
+### KEY SENSITIV ###
+WHERE PNOMBRE LIKE '_A%' or PNOMBRE LIKE '_a%'
+or
+WHERE UPPER(PNOMBRE) LIKE '_A%'
+
+### CONSULTAS ANIDADAS ###
+SELECT NOMBRE
+FROM PROVEEDORES
+WHERE NUMERO IN (
+	SELECT NUMERO
+	FROM PROVE
+	WHERE PNRO = 400
+	TE DEVuelve el numero cuando el pnro es 400.
+)
+	Luego con esos numeros busca el nombre de la tabla provedores
+	
+### IN ###
+CUando quiero hacer WHERE más de un valor IN(100,200) o
+IN (CONSULTA NUEVA *SELECT*) 
+
+### NOT IN ###
+Trame todos las tuplas que no tenga estos valores IN(100, 200) o IN (CONSULTA NUEVA *SELECT*)
+
+### INNER JOIN ###
+Condición de igualdad
+SELECT P.NOMBRE
+FROM PROVEEDORES AS P, PROV_PRODC AS PP
+WHERE P.NUMERO = PP.NUMERO -- condición de igualdad
+AND PP.PNRO = 004;
+
+### MAX/MIN ###
+Trae el valor maximo de lo que le pase como parametro, UN SOLO VALOR
+
+
+### UNION ###
+Trabaja identico como la union de dos conjuntos, para unir, dos consultas SELECT de difrentes tablas, obvia los repitidos
+para que traiga los repetidos se hace UNION ALL.
+
+Trae cuando se cumple CUALQUIERA DE LAS DOS consultas. 
+
+ACA HAY QUE SENTARSE, APRENDER Y TIPEAR COMO EL PIBE DE WELCOME
+
+### OUTER JOIN ###
+LEFT / RIGHT / FULL  -  Trae lo que esta en a y los repetidos en una tabla y en la otra 
+
+NORMAS SQL DISTINTAS 
+
+ANSI SQL
+WHERE c.id_club =p.id_club
+
+transact SQL
+inner join poiscion p on c.id_club = p.id_club
+where ppartidos_empatados = 0
+
+
+
+### UPDATE ###
+cambiar el valor de un valor de un campo de una tabla
+UPDATE "tabla" SET TAMANO = "chico" justamente a eso
+PRECIO = PRECIO - 1000
+LOCALIDAD = NULL -- (vaciar una columna) tiene que permitir NULL
+WERE PNRO = 003; -- sin esto no elijo a quien le hago el cambio
+
+### DELETE ###
+DELETE FROM PRODUCTOS 
+WHERE PNRO = 004
+BORRO todos los registros de mi tabla que cumplen el WHERE
+si no coloco el WHERE  se borran todos.
+
+### INSERT ###
+Inserta registros de forma manual:
+INSERT INTO PRODUCTS (PNRO,PNOMBRE,PRECIO,LOCALIDAD)
+VALUES (004,'jabon',1000,'Avellaneda') x1000
+
+Insertar registro que ya estan en otra tabla:
+INSERT INTO AUX_CLIENTES SELECT * FROM clientes WHERE LOCALIDAD = 'Avellaneda'; AUX_CLIENTES tiene que ser igual CLIENTES
+
+CREATE TABLE AUX_CLIENTES AS SELECT * FROM CLIENTES
+Crea una tabla con la misma columna y con los mismo registros
+
+Si no quiero los registro le pongo un WHERE falso al SELECT
+
+### DESCRIBE ###
+Describe una tabla, columnas
+DESCRIBE 'tabla'
+
+
+### TRANSACCIONES ###
+TCL, commit, discard. Guardar y descartar cambios.
+
+Como labura internamente un motor.
+Luego de hacer un update queda en la memoria, y se espera que se las grabe o se cancele, puedo hacer otra sentencias como DELETE o lo que quiera solo se guardan con rollback o commit
+
+ROLLBACK
+Se cancelan todas las acciones de mi memoria desde que empeze mi sesion de sql o desde mi ultimo rollback o commit (punto de sincronizacion)
+
+COMMIT 
+Se confirman las acciones de mi memoria y pasan a la base de datos. 
+
+CADA TANTO LO QUE VAS HACIENDO TODO BIEN LO TENES QUE IR GUARDANDO

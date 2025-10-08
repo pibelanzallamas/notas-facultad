@@ -1,0 +1,18 @@
+2 temas antes del parcial
+
+catálog de datos
+c
+
+constrains = reglas de integridad
+
+ponerle nombre a la primary key
+
+Nuevo-->
+"CONSTRAINTS s_emp_fk_dept_id" antes
+de FOREGAIN KEY o PRIMARY KEY
+
+CLAVE PRIMARIA COMPUESTA
+cuando tengo una primary key formada por mas de una columna
+
+desabilidad los constraints
+ALTER TABLE tabla DISABLE CONSTRAIT nombre_constraint;

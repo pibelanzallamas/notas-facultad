@@ -1,0 +1,306 @@
+Base de datos I  - Clase I
+
+bd mysql : sistema de gestion de base de datos relacion
+my sqlworkbench: herramienta que permite modelar diagramas de 
+entidad de relacion para base de datos
+
+los usuarios finales se conectan atravez de la apps
+
+nosotros tambien pero nos conectamos atravez de sql
+
+struterect query languange, 
+una app para conectarse a la base para hacer
+sentencias de sql, 
+como nace? 
+motor sql, wizard, viene ya un sql por motor de sql
+
+
+que operaciones se pueden hacer en sql?
+tipos de operaciones:
+  - ddl lenguaje de definicion de datos: alterar estructura de 
+    la base de datos, CREATE (objetos de base de datos), ALTER 
+    (agregar una columna), DROP (todo el objeto de una bd), 
+    interactuan con los objetos de la base de datos, TRUNCATE
+    (elimina todos los registros de un obejto)
+  - dml lenguaje de manipulacion de datos: manipulo los datos 
+    sin alterar la estructura de mi base de datos, SELECT (con
+    sulto info de mis objetos, tablas), UPDATE (modifico un da
+    to de una columna), INSERT (inserto registros en una tabla)
+    DELETE(elimino 1,más o todos los registros de un objeto)
+  - tcl lenguaje de control de transacciones: me permiten traba
+    jar de forma segura  con las operaciones dml, me permiten 
+    guardar o deshacer las operaciones de dml
+  - dcl lenguaje de control de datos: operacion te permiten
+    administrar la seguridad de las base de datos, dar permisos 
+    tanto para ddl como para dml, GRAND(dar permisos de DDL),
+    REVOKE(quitar permisos de DDL)
+
+COMPONENTES DE UN SISTEMA DE BASE DE DATOS
+
+INFORMACION
+ informacion integrada: unificacion de varios archivos de datos
+ 		        eliminando cualquier redundancia
+
+ compartida: los elementos de la base pueden compartirse con 
+             varios usuarios
+
+ ademas se almacenas la def de la base, llamado "catalogo del
+ sistema", diccionario de datos, todos los detalles de la bd
+
+EQUIPOS
+ Los servidores,volumenes de almacenami,i/o devices,controladores
+ memorias, procesa
+
+PROGRAMAS
+ de aplicacion: permiten la interacción de usuarios con la db
+ de administra: el sistema de administracion, maneja las soli
+ 		citudes de acceso a la bd, la obtencion y pue
+		sta al dia de la bd
+
+USUARIOS
+- 4 tipos de usuarios:
+  - Administrador de Base de Datos: El dba es la 
+
+
+CARACTERISTICAS DE UNA BASE DE DATOS
+
+Una base de datos está constituía por un conjunto de datos persistentes,
+disponibles para muchos usuarios, los cuales, pueden acceder en forma
+simultánea.
+
+ Independencia de datos respecto de los sistema: si se modifica la bd, 
+	no tiene porque modificarse el programa que utiliza dicha data
+
+ Posibilidad de disminuit la redundancia: El control de la redundancia
+	de la BD permite reducir el almacenamiento.
+
+ Naturaleza auto descriptiva: contiene informacion sobre la estructura
+	tipo de formatos y restricciones
+
+ Manejo de múltiples vistas de los datos: Una bd suele ser vista usuarios
+	en diferentes momentos y en diferentes maneras, solo lo que quere
+
+ Posibilidad de compartir los datos: info dispo para varios usuarios y
+	por distintasa vias de acceso. 
+
+ Compacto, rápido y actual: se dispone cualquier momento del día, precisa
+	y al día
+
+ Auditoria:
+	Proveen la facilidad para obtener estados de la Bd, registros
+
+
+	
+UNIDAD 2 ###########
+
+BASE DE DATOS RELACIONAL
+es aquella que los usuarios persiven como un conjunto de tablas, se visualiza
+con un diseño de una tabla de doble entrada.
+
+Propiedades:
+	- cada entrada representa un item de datos, no hay items repetidos
+	- son homogeneas por columna, x columna son de la misma clase
+	- cada columna tiene un unico nombre en la tabla
+	= todas las filas son distintas
+	- las tablas tienen una clave primaria unica para esa tabla
+	  pk por tabla es unica, puede ser dos o mas 
+	- las filas y columnas pueden considerarse en cualquier secuencia no
+	  estan ordenadas
+
+Definiciones:
+	- Fila: tupla, un registo de datos
+	- Columna: atributo cada uno del contenido de las celdas
+	- Grado de relacion: cantidad de columnas que tiene
+	- cardinalidad el numero de filas
+	- dominio es el rango de valores posibles que puede adoptar una colum
+	  ejemplo, columna dia, tiene un dominio de 1 al 31
+
+Tipos de Relacios:
+	- Relaciones base o real: son aquellas relaciones con nombre, son las
+	  tablas o fisicas. 
+	- Vistas: no son informacion real si no que apuntan a un relacion real
+	  relaciones virtuales
+	- Snapchots: es un mix entre relaciones real y vistas, tiene nombre, 
+	  tiene un vista sql, y apunta a una tabla real fisica, queda estatica
+	  la informacion, replicada
+	- Resultador de consultas: es el resultado de lo que me da un select
+	  si no aclaro el nombre para guardarlo, depende si lo que quiero guardar
+	- Realaciones temporales: es un mix entre tabla comun y tabla temporal
+	  create temporal table, relacion con nombre pero se vacia la tabla al 
+	  finalizar la sesion
+
+A) que cardinalidad tiene esta relacion? 6
+B) cual es el grado de la relacion? 5
+C) entidad porque tiene una sola primary key
+
+A) 1-10
+B) notas
+C) legajo y matería
+
+
+C) 
+
+
+Nomenclaturas	 
+v_vistas tablas s_snapshot i_index
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+CREATE, crear obejetos de base de datos, tabla, view, store
+	alter: altera una columna de una tabla
+	drop: eliminacion todos los objetos de una base de datos
+	(tabla)
+	truncate: elimina todos los datos	
+
+-dml: no modifica la estrucutra de la tabla, modifica los registras
+	
+-tcl: commit or rollback, solo funciona con dml, confirma o rebierte la accion anterior
+	-update modifica el dato de una fila (lenguaje de control de transacciones)
+
+- dcl: permisos, ddl, dml:
+- Permisos de ddl
+Le puedo dar permisos si soy system, que yo quiero, ‘create table’, ‘drop table’. Con REVOKE se los saco
+
+TODOS los objetos pertenecen a un propietario, el admin puede darle la propiedad de objetos. 
+	CREATE TABLE RGARCIA PEDIDOS. x
+
+- Permiso de dml: cuando un usuario es propietario puede modificar sus tablas de las que es propietario. Les puedo dar permisos para que modifique otra tabla. En un caso HIPOTETICO, de que pierda un 
+usuario, tengo que pasar el owner a otro usuario, o tambien puedo crear USUARIO INVISIBLES para 
+crear las tabla
+
+…. me distraje 
+
+
+- I was dancing when I was 8
+
+DBA
+
+MOTOR (software que interactua con la base de datos) → BASE DE DATOS → INFORMACIÓN DE LA BASE (Vista de Catálogo, que tengo en la base de datos, usuarios, permisos, columnas de tablas) 
+
+equipos: el hardware donde se hacen las base
+
+programas: aplicaciones donde interactuan con la base (apps, web)
+
+USUARIOS : DBA – usuario principal de la base de datos. Responsable de administracion de toda la  de la informacion de la empresa. 
+Funciones especificas: I
+
+dentificar de esquema conceptual: en caso que quiero una bdd de cero, entidades(tables), diseño lógico de cada entidad, (saber que columnas tiene cada tabla), DER (relacion de las tablas. 
+DISEÑO LOGICO
+
+la definicion del esquema interno: como se representara la info en la base de datos, se utiliza ddl. 
+DISEÑÓ FISICO
+
+la vinvulacion con los usuarios: las reglas de permisos de los usuarios
+
+definicion de las varificaciones de seguridad e integridad: seguridad, de manera correcta, no de manera inconsistente, reglas de validacion(rango de edad 18 – 65), no puede entrar datos incosistente en la base de datos. Ejemplo primary key
+
+Me gustaria decir: “ tengo 29 año de expericiencia desarrollando aplicaciones”  “29 años haciendo peliculas”
+
+respaldo de recuperacion: backups de la data, se hace todos los dias, a primera hora, chequeo el backup de ayer, en la madrugada, si hay errores, reviso el log y lo hago a mano,
+
+recovery: laburo de bombero, se rompio algo, tengo salir corriendo
+
+backup ligico full export full_lunes.dmp  se van pizando dia a dia, 
+
+backup fisico: data_files, .dbf por base de datos, reservo datos al principio y luego los voy llenando con los datos, si se llenan, a otro servidor, unidades de cinta, en otro edificio. 
+
+1)  full export con base delanatada, detener la base de datos → backapeao los dos archivos → luego levanto la base de datos, para el dia siguiente. TODOS LOS DIAS.
+
+CAIDAS:
+- se corta la luz, no requiere nuestra intervencion (hay una bateria de emergencia)
+- un usuario borra tablas o datos de mas, me tiene que pedir perdir permisos al dba, y realizo un IMPORT apuntando al ultimo Full_export (del día anterior) pero no es full, solo la tabla que necesito,
+
+Si la magnitud de la base de los cambios luego de recupera el bak del dia anterior, llamo a los usuarios y les pido qu emod de nuevo 
+base en modo arcaid: se graba algo y se guarda en otro archivo arcai, y recupero los datos del dia
+
+LIMITES 
+El dba le puede administrar el desempeño del uso de la base de datos, para que la base tenga un buen rendimiento, limitar por megas, tiempo
+
+los analistas
+
+CARACTERISTICAS
+
+VISTAS: diferentes usuarios ven distintas partes de tablas.
+CREATE VIEW esta asociado a una consulta SQL,  que le dice que puede ver de una tabla, es una porcion de la tabla que yo como DBA le doy. Apunta a una tabla y la muestra de manera parcial.  
+Auditar una base de datos:  dejar registros de los movimientos criticos, como accesos realizados y registros borrados. Se guardan en tablas, y esas tablas se pueden exportar. Operaciones de ddl, y de dml. SE AUDITA LAS TABLAS PRINCIPALES Y SE BACKUPEA TAMBIEN COMO TABLAS. Las tengo que crear yo y auditar yo en mi base.
+
+Recupero:
+tengo que garantizar el backup 
+
+Relacionabilidad:
+los datos podran ser reutilizado. 
+
+
+ENTIDADES PURAS: Todas las columnas son propios de la tabla
+
+ENTIDAD: no todas las columnas son propias de la tabla
+
+todos los items de una columna: tienen estas caractereristicas.
+
+ID, (numero) regla de integridad valida que no hay repetidos o vacios
+las otras  tablas que tengo dos ids tengo que verificar las dos columnas
+
+las primeras columnas son las primery key
+
+NOMBRE DE TABLAS- todo con guion bajo, y en plural, todo igual
+
+DEFINCIONES BASICAS:
+filas = tuplas 
+columnas = atributos
+
+grado de relacion: cantidad de columnas
+cardinalidad: numero de filas
+dominio: rango de valores posibles que puede tener una columna (solo numeros), ejemplo dominio, dia: 1-31, mes: 1-12
+
+tipos de relaciones de base de datos: 
+  relaciones base o reales: son aquellas relacionse con nombre. Son las tablas o entidades.
+  Vistas (relaciones virtuales): 
+V_NOMBRES_DE VISTA:
+
+instantaneas (snapshot):  relacion que tienen nombre,  tienen informacion --- 
+S_NOMBRE_DE_SNAP:
+
+PUEDEN TENER NOMBRE O NO si lo queres grabar en un archivo.
+
+Create temporary. se borran en 24 horas. Queda limpia al dia siguiente.
+
+
+
+
+
+
+
+

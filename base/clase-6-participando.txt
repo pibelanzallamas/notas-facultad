@@ -1,0 +1,155 @@
+cada tabla tiene que tener
+solo un cliente, por registro
+
+tabla empleados
+1 registro 1 empleado SIEMPRE
+
+tabla animales
+1 animal por registro
+
+--depender: si cambio uno
+ tengo que si o si cambiar el otro
+
+primera forma nomral
+-no repetir informacion
+
+
+segunda forma normal
+- tiene que estar en primera
+
+- los atributos no clave
+tiene que tener dependecias
+funcional completa con toda 
+la clave primaria, 
+que depanda de ambas claves 
+si tengo mas de dos
+
+- sin no depende, o es parcial depe
+ndencia, deglosar esa prop y pon
+er en tabla correspondiente
+completa
+
+3era form
+los atributos no claves tienen que
+tener dependencias de los otros
+atributos no clave 
+
+####################
+
+ACA SI TE CONFUNDIS NO HAY NADA
+QUE TE AVISE (!!!) 
+
+####################
+
+ciclo de vida de base de datos
+
+1) defin de sistema, para que
+lo quiero y que datos guardo
+
+2) diseñó
+
+der - mapita de tablas
+
+diseño las tablas, atributos y
+relaciones - diseño 
+logico
+
+diseñó fisico - crear la base
+de datos en sentencias
+
+3) implemntacio: implemente 
+en sgvd o
+
+4) carga o conversion de los datos
+si es nueva de 0, cargo direct
+si es migracion, convierto los datos
+
+5) conversion de la aplicaciones
+
+6) probar con datos reales en 
+paralelo con el sistema existente
+para no provocar fallos, ir para
+atras, y para adelante hasta que
+este todo bien
+
+7)operacion uso diario de bdd
+
+8) mantimiento, backup administraciom
+de servicios
+
+MAS PAUTAS AL DISEÑO FISICO
+
+algo de transacciones
+
+modelo entidad relacion er, 
+modelo de datos de alto nivel 
+entidad - relacion
+
+
+diagrama  CHEN \ MARTIN
+
+ELEMENTOS DEL DIAGRMA ENTIDADRELACION
+
+ENTIDAD
+cualquier objeto real o bstracto que 
+existe en un contexto determinado
+una persona un puesto de trabajo
+se representan con 
+rectangulos con el nombre 
+
+atributo:
+def las caracter de una entidad
+dan info, num, string, fecha
+se representa con un circulo
+y una linea que los une
+
+clasificacion:
+
+relaciones:
+asociacion dentre dos o mas entidades
+cada relacion tiene un nombre que 
+describre su funcion
+se grafican con rombos 
+se indica tambien la cardinalidad
+
+pata de gallo - muchos
+palito - uno
+
+---
+
+relaciones recursivas
+
+se relacionan a si mismo 
+
+son relacione binarias que conecta con sigo misma
+
+empleados
+	empleado juan trabaja para
+	empleado jefe
+
+representado por una recta, que 
+se vuelve a marcar, con los palitos
+
+si o si tiene que se de uno a uno
+si es de uno a muchos tengo que
+crear otra tabla
+
+palito y circulo---
+
+es cuando puede estar una vez o
+cero veces
+
+
+---|-< uno a mucho
+se marca a la llega
+
+|-|---- uno a uno 
+
+
+tarea
+
+no va ser ambigua la respuesta
+con respecto a la cardinalidad,
+deducir logicamente
+
+buenisimo
