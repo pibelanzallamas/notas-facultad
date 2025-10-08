@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+----------- tabla de frecuencia xd
+
+
+tipos de conteo
+
+3 permutacion 
+orden TRUE
+eleme TRUE n!
+
+varacion
+orden TRUE
+eleme FALSE
+simple: n!/n-r!
+cn rep: n**r
+
+combinacion
+orden FALSE
+eleme FALSE
+simple n!/r!(n-r)!
+corepe (n+r-1)!/r!(n-1)!
+
+
+probabilidad 
+
+comun - s/e  0 < s < 1 e = 1
+condicional - P(a|b) = P(anb)/P(b)
+
+suma = P(aUb) = P(a) + P(b) - P(anb)
+
+factorial 
+independiente = P(anb) =  P(a) * P(b)
+dependiente   = P(anb) = P(a|b) * P(b)
+
+complemento = P(á) = 1 - P(a)
+
+conjunta
+
+de bayes
+
+
+

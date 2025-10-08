@@ -1,0 +1,20 @@
+modleo de parcial
+-----------------
+
+1. 13 13 13 13 - 3 al azar
+
+2 / 52 1 / 52
+
+6. 
+
+	p(r) = 4/52
+
+	p(par)= 20/52
+
+	p(rnpar) = 0.076 * 0.3846
+
+	p(rnpar) = 0.029
+
+7 fumadores = 40% ansiedad = 30% P(fua) = 45%
+
+ 

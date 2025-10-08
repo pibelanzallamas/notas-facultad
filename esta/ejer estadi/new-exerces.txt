@@ -1,0 +1,10 @@
+espacio muestral: 
+
+1 moneda - 2 posibilidades
+
+2 monedas - 4 posibilidades 
+
+1 dado - 6 posibilidades
+-------------------
+
+

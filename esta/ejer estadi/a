@@ -1,0 +1,26 @@
+
+P(c)=0.2
+P(d)=0.08
+P(cnd)=0.06
+P(-c)=0.8
+P(-d)=0.92
+
+P(d|c)= 0.06/0.2 = 0.3
+
+P(-c|-d)= P(-c n -d) /0.92 = 
+
+P(-c n -d) = ?
+
+P(c-d) = 0.2 - 0.06  = 0.14
+
+0.14  0.06  0.02 = 0.22
+
+P(d-c) = 0.08 - 0.06 = 0.02
+
+P(cud) = P(c) + P(d) - P(cnd) = 
+          0.2 + 0.08 - 0.06 = 0.22
+
+P(-cu-d) = 1 - P(cud) = 1 - 0.22 = 0.88
+
+por deducción si es contratado y no es delegado
+es parte del universo por lo tando, todo lo demas

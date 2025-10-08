@@ -1,0 +1,41 @@
+nano 
+
+mejor promedio mejor compa y mejor asiste
+
+32 = n 
+3  = r
+
+variacion con repeticion = n**r 32 * 32 *32, 32768
+no se usan todos los elementos
+se pueden repetir los premios, por ende un alumno puede recibir mas un premio
+importa el orden por que no es lo mismo asistencia perfecta que mejor compañero
+
+-
+
+juan seleccion 2 entre 15, de accion, 
+pedro selecci  2 entre 10, de terror,
+
+no uso todos los elementos
+importa el orden
+no hay repeticion
+
+variacion sin repeticion-> n!/(n-r)! -> 15! / 13! = 15 * 14 = 210
+
+			   n!/(n-r)! -> 10! / 8! = 10*9 = 90 18900 posibilidades
+
+-
+
+P(m) = 16/30 P(v) = 14/30
+
+P(l) = 12/30 P(a) = 18/30
+
+P(mnl)= 3/30
+
+P(mnl) = 3/30 * 12/30 
+
+P(vl) = ?
+
+P(a|m) = ?
+
+- 
+

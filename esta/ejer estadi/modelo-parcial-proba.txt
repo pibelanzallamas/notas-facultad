@@ -1,0 +1,64 @@
+1. De una baraja normal de 52 cartas se scan 3 cartas al azar (sin remplazo). ¿Cuál es la probabilidad de obtener exactamente 2 
+cartas rojas y 1 carta negra?
+
+NO importa el ordén,
+
+composicion: 
+
+n=52 --- 13+13+13+13 = 26 rojas y 26 negras -> 50% de sacar una roja o una negra 
+
+
+--------------
+
+p(b-a) = p(b) =
+
+
+------------
+
+3. 40% fuma - 30% anciedad - 45$ fuma o sufre de ansiedad
+
+a. P(a|f) = P(anf)/P(f) = ?  / 0.4 
+	p9aNf) = 
+	p(auf) = p(a) + p(f) - p(nf)
+	0.45   = 0.4  + 0.3  - p(nf)
+	p(anf) = 0.4 + 0.3 - 0.45
+	p(anf) = 0.25  -> 0.25 / 0.4 = 0.625
+
+b. P(a|fc) = P(anfc)/P(fc) = ? / ?
+	fc = 1 - f
+	fc = 0.6
+
+	P(a|fc) = ? / 0.6
+
+	P(a) = P(anf) + P(anfc)
+
+	p(a) = P(anf) + p(anfc)
+	
+	0.4 - 0.25 = 
+	
+	0.4 = 0.25 + P(anfc)
+	
+	0.4 - 0.25 = P(anfc)
+
+	0.15 = P(anfc) 
+
+
+c. P(f|a) = P(fna)/P(a) 
+
+   P(f|a) = 0.25 / 0.4
+	
+   P(f|a) = 0.625
+
+d. P(fn|a) = P(fcna)/P(a)
+   
+   0.15 / 0.4 = 0.375
+   
+  
+--------------
+8.
+
+tres jugadores de baloncesto a b y c, 
+a=0.8 b=.7 c=.6
+si cada uno lanza un tiro calcular las posibilidades
+
+
